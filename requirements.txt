@@ -4,3 +4,5 @@ pycryptodome
 zstandard
 pillow
 pillow-heif
+# 桌面客户端 client.py（打包 exe 的入口）依赖 PySide6
+PySide6>=6.6
