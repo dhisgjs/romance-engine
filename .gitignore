@@ -1,3 +1,48 @@
+# ==========================================================
+# 本项目专用：真实用户数据 / 密钥 —— 绝不提交
+# ==========================================================
+# 解密后的微信聊天数据库、真实 wxid、联系人信息
+data/
+# 数据库解密密钥（拿到即可解密上面全部聊天记录）
+data/keys/
+data/keys_bak/
+
+# 含真实 API 密钥的配置
+data/ai_config.json
+# 真实私聊记录与长期记忆
+data/ai_chats.json
+data/notes.json
+data/notes_test.json
+data/buddy_memory.json
+data/collections.json
+data/account_nicknames.json
+
+# 测试产物与本机临时文件
+tests/out_*
+tests/verify_out.txt
+tests/memimg_*
+out_tmp*.txt
+probe*.tmp
+remote_gitignore.txt
+my_gitignore.txt
+
+# 编辑器
+.idea/
+.vscode/
+*.swp
+
+# ---- 本项目构建产物 ----
+.pipcache/
+.tmp/
+
+# PyInstaller spec：官方模板忽略 *.spec，但本项目的
+# WeChatChatViewer.spec 是编译 exe 必需的，必须入库
+!WeChatChatViewer.spec
+*.spec.bak
+
+# ==========================================================
+# 以下为 Python 官方忽略模板
+# ==========================================================
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -30,7 +75,6 @@ MANIFEST
 #   Usually these files are written by a python script from a template
 #   before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
-*.spec
 
 # Installer logs
 pip-log.txt
